@@ -1,0 +1,2 @@
+shellenv_add_subfiles_entry './' "$layout_working_dir/bashit-legacy.sh.d"
+

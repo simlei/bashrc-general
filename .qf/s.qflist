@@ -1,0 +1,4 @@
+touchstone-lib/lib/190---modules.sh|6 col 1| modls() {
+modules/composure/composure_home/tsfiles.inc|8 col 5| modls | lambda : 'find $line -maxdepth 2 -type f -name "*.layout" -o -name "*.sh"'
+modules/composure/composure_home/gitmods.inc|22 col 5| modls | gitselect --multi | replCddirs "${args[@]}"
+modules/composure/composure_home/gitselect.inc|8 col 5| modls | filter : '[[ -d "$line" ]]' | filter : 'isGit "$line"' | interactiveSelect --preview '(cd {}; git remote update; git status -uno; git remote -v;)' "$@"

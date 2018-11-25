@@ -1,0 +1,11 @@
+/home/simon/touchstone/___touchstone-lib/lib/301---tsb.sh|155 col 26| local foundmod=$(mod_list_all | filter : '[[ $(basename "$line") == "$modname" ]]' | head -n 1)
+/home/simon/touchstone/___touchstone-lib/lib/301---tsb.sh|172 col 18| done < <(mod_list_all)
+/home/simon/touchstone/___touchstone-lib/lib/190---modules.sh|3 col 1| mod_list_all() {
+/home/simon/touchstone/___touchstone-lib/lib/190---modules.sh|45 col 43| local union="$( joinlines ' || ' < <( mod_list_all | lambda : 'printf "%s %q\n" "$predicate" "$line"'  ) )"
+/home/simon/touchstone/___touchstone-lib/lib/190---modules.sh|69 col 5| mod_list_all | finddirs --stdin "$@"
+/home/simon/touchstone/touchstone-lib/lib/190---modules.sh|3 col 1| mod_list_all() {
+/home/simon/touchstone/touchstone-lib/lib/190---modules.sh|7 col 5| mod_list_all "$@"
+/home/simon/touchstone/touchstone-lib/lib/190---modules.sh|48 col 43| local union="$( joinlines ' || ' < <( mod_list_all | lambda : 'printf "%s %q\n" "$predicate" "$line"'  ) )"
+/home/simon/touchstone/touchstone-lib/lib/190---modules.sh|76 col 9| mod_list_all | finddirs --stdin "$@"
+/home/simon/touchstone/touchstone-lib/lib/301---tsb.sh|165 col 26| local foundmod=$(mod_list_all | filter : '[[ $(basename "$line") == "$modname" ]]' | head -n 1)
+/home/simon/touchstone/touchstone-lib/lib/301---tsb.sh|182 col 18| done < <(mod_list_all)
